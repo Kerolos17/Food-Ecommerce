@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import { Fragment, useState } from "react";
 import Login from "./Components/LoginPage/Login";
 import Cart from "./pages//Cart/Cart";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
         </Routes>
+        <ScrollToTop/>
       </div>
       <Footer />
     </Fragment>
